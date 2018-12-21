@@ -1,0 +1,46 @@
+java_test(
+    name = "JsonAudioProfileResponseConverterTest",
+    srcs = ["JsonAudioProfileResponseConverterTest.java"],
+    deps = [
+        "//3rdparty/jvm/junit:junit",
+        "//3rdparty/jvm/org/assertj:assertj-core",
+        "//3rdparty/jvm/org/mockito:mockito-core",
+        "//src/main/java/com/asaenf/profiling:profiling",
+        "//src/main/java/com/asaenf/model:model",
+                "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-databind",
+                                                                      "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-annotations",
+                                                                       "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-core",
+                                                                      "//3rdparty/jvm/com/fasterxml/jackson/dataformat:jackson-dataformat-yaml",
+                                                                       "//3rdparty/jvm/com/fasterxml/jackson/datatype:jackson-datatype-guava",
+                                                                     "//3rdparty/jvm/com/fasterxml/jackson/datatype:jackson-datatype-joda",
+    ],
+)
+
+java_test(
+    name = "HttpProfilingDataProviderTest",
+    srcs = ["HttpProfilingDataProviderTest.java"],
+    deps = [
+        "//3rdparty/jvm/junit:junit",
+        "//3rdparty/jvm/org/assertj:assertj-core",
+        "//3rdparty/jvm/org/mockito:mockito-core",
+        "//src/main/java/com/asaenf/profiling:profiling",
+        "//src/main/java/com/asaenf/model:model",
+          "//src/main/java/com/asaenf/exception:exception",
+                "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-databind",
+                                                                      "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-annotations",
+                                                                       "//3rdparty/jvm/com/fasterxml/jackson/core:jackson-core",
+                                                                      "//3rdparty/jvm/com/fasterxml/jackson/dataformat:jackson-dataformat-yaml",
+                                                                       "//3rdparty/jvm/com/fasterxml/jackson/datatype:jackson-datatype-guava",
+                                                                     "//3rdparty/jvm/com/fasterxml/jackson/datatype:jackson-datatype-joda",
+                 "//3rdparty/jvm/com/spotify:apollo-core",
+                      "//3rdparty/jvm/com/spotify:apollo-api",
+                 "//3rdparty/jvm/com/spotify:apollo-api-impl",
+                  "//3rdparty/jvm/com/spotify:apollo-environment",
+                  "//3rdparty/jvm/com/spotify:apollo-metrics",
+                 "//3rdparty/jvm/com/spotify:apollo-okhttp-client",
+                 "//3rdparty/jvm/com/spotify:apollo-route",
+                 "//3rdparty/jvm/com/spotify/metrics:semantic-metrics-api",
+                  "//3rdparty/jvm/com/spotify/metrics:semantic-metrics-core",
+                    "//3rdparty/jvm/com/squareup/okio:okio"
+    ],
+)

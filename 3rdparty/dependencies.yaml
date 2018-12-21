@@ -1,0 +1,99 @@
+options:
+  mavenResolvers:
+    - id: "default"
+      url: https://repo.maven.apache.org/maven2/
+  scalaAbi: "2.12"
+  # Excluded dependencies will be completely ignored from all transitive dependencies
+  excludedDependencies:
+
+maven:
+  ch.qos.logback:
+    logback:
+      modules:
+        - classic
+        - core
+      version: "1.2.3"
+
+  com.codahale.metrics:
+    metrics:
+      modules:
+        - core
+        - jvm
+      version: "3.0.2"
+
+  com.fasterxml.jackson:
+    jackson:
+      modules:
+        - core:annotations
+        - core:core
+        - core:databind
+        - dataformat:dataformat-yaml
+        - datatype:datatype-guava
+        - datatype:datatype-jdk8
+        - datatype:datatype-joda
+        - jaxrs:jaxrs-json-provider
+      version: "2.9.7"
+
+  com.google.guava:
+    guava:
+      version: "26.0-jre"
+
+  com.google.inject:
+    guice:
+      version: "4.2.2"
+
+  com.spotify:
+    apollo:
+      modules:
+        - api
+        - api-impl
+        - core
+        - environment
+        - metrics
+        - okhttp-client
+        - route
+        - test
+        - http-service
+      version: "1.10.1"
+
+  com.spotify.metrics:
+    semantic-metrics:
+      modules:
+        - api
+        - core
+        - ffwd-reporter
+      version: "0.11.2"
+
+  com.squareup.okio:
+    okio:
+      version: "1.16.0"
+
+  javax.annotation:
+    javax.annotation-api:
+      version: "1.2"
+
+  javax.inject:
+    javax.inject:
+      version: "1"
+
+  joda-time:
+    joda-time:
+      version: "2.9.9"
+
+  junit:
+    junit:
+      version: "4.12"
+
+  org.mockito:
+    mockito-core:
+      version: "2.23.4"
+
+  org.assertj:
+    assertj-core:
+      version: "3.11.1"
+
+  org.slf4j:
+    slf4j:
+      modules:
+        - api
+      version: "1.7.25"

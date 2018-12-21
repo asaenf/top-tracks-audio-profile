@@ -1,0 +1,4 @@
+#!/bin/sh
+script=$(mktemp)
+bazel run --script_path="$script" @spotify_bazel_tools//sync-deps
+exec "$script" -w "$PWD" "$@"
