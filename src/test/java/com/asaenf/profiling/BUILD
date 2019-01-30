@@ -44,3 +44,28 @@ java_test(
                     "//3rdparty/jvm/com/squareup/okio:okio"
     ],
 )
+java_test(
+    name = "ProfilingServiceTest",
+    srcs = ["ProfilingServiceTest.java"],
+    deps = [
+        "//3rdparty/jvm/junit:junit",
+        "//3rdparty/jvm/org/assertj:assertj-core",
+        "//3rdparty/jvm/org/mockito:mockito-core",
+        "//src/main/java/com/asaenf/profiling:profiling",
+          "//src/main/java/com/asaenf/top:toptracks",
+        "//src/main/java/com/asaenf/model:model",
+                "//src/main/java/com/asaenf/authorisation:auth",
+
+          "//src/main/java/com/asaenf/exception:exception",
+                 "//3rdparty/jvm/com/spotify:apollo-core",
+                      "//3rdparty/jvm/com/spotify:apollo-api",
+                 "//3rdparty/jvm/com/spotify:apollo-api-impl",
+                  "//3rdparty/jvm/com/spotify:apollo-environment",
+                  "//3rdparty/jvm/com/spotify:apollo-metrics",
+                 "//3rdparty/jvm/com/spotify:apollo-okhttp-client",
+                 "//3rdparty/jvm/com/spotify:apollo-route",
+                 "//3rdparty/jvm/com/spotify/metrics:semantic-metrics-api",
+                  "//3rdparty/jvm/com/spotify/metrics:semantic-metrics-core",
+                    "//3rdparty/jvm/com/squareup/okio:okio"
+    ],
+)

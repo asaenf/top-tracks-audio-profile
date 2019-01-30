@@ -3,6 +3,8 @@ java_library(
         srcs = glob(["*.java"]),
         deps = ["//src/main/java/com/asaenf/model:model",
                 "//src/main/java/com/asaenf/exception:exception",
+                  "//src/main/java/com/asaenf/top:toptracks",
+                  "//src/main/java/com/asaenf/authorisation:auth",
                                       "//3rdparty/jvm/com/spotify:apollo-api",
                                                         "//3rdparty/jvm/com/spotify:apollo-core",
                                                         "//3rdparty/jvm/com/spotify:apollo-api-impl",
@@ -23,6 +25,7 @@ java_library(
                                                                 "//3rdparty/jvm/javax/inject:javax_inject",
                                                                 "//3rdparty/jvm/ch/qos/logback:logback-classic",
                                                                 "//3rdparty/jvm/ch/qos/logback:logback-core",
+                                                                "//3rdparty/jvm/org/slf4j:slf4j-api",
                                                                 "//3rdparty/jvm/com/squareup/okio:okio"
               ],
          visibility = ["//src/main/java/com/asaenf:__subpackages__",

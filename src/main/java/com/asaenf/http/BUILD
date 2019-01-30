@@ -21,7 +21,11 @@ java_library(
                             "//3rdparty/jvm/javax/inject:javax_inject",
                             "//3rdparty/jvm/ch/qos/logback:logback-classic",
                             "//3rdparty/jvm/ch/qos/logback:logback-core",
-                            "//src/main/java/com/asaenf/profiling:profiling"
+                                  "//3rdparty/jvm/org/slf4j:slf4j-api",
+                            "//src/main/java/com/asaenf/profiling:profiling",
+                            "//src/main/java/com/asaenf/model:model",
+                             "//src/main/java/com/asaenf/authorisation:auth",
+                             "//src/main/java/com/asaenf/exception:exception"
                     ],
      visibility = ["//src/main/java/com/asaenf:__pkg__"],
 )
